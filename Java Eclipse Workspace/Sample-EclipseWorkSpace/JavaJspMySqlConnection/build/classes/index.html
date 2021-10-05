@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Contact Form</title>
+</head>
+<body>
+
+	<!-- Note: For using Database (MySQL) in JSP, the MySqlConnector Jar file,
+	     should be COPY and PASTE in
+	
+			src/main/webapp/WEB-INF/lib
+	 -->
+
+	<form action="index.jsp" method="post">
+	
+		Name: <input type="text" name="name" placeholder="Enter Name" required><br><br>
+		Email: <input type="email" name="email" placeholder="Enter email" required><br><br>
+		Place: <input type="text" name="place" placeholder="Enter place" required><br><br>
+		Comment: <input type="text" name="comment" placeholder="Enter comment"><br><br>
+		<input type="submit" value="Add">
+		<input type="submit" value="Edit" formaction="editcontacts.jsp">
+		<input type="submit" value="Delete" formaction="deletecontacts.jsp">
+	</form>
+	
+	<br>
+		<a href="showcontacts.jsp">  
+      		<input type="submit" value="Show Records">  
+     	</a>
+	
+
+</body>
+</html>
