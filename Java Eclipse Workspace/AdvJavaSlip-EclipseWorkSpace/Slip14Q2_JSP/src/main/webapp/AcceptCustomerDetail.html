@@ -1,0 +1,41 @@
+
+<!-- 
+	Slip14 2. Write one HTML page which accepts customer details (cno, cname, city), Insert this
+	record in a table using a JSP
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Enter Customer Details</title>
+</head>
+<body>
+
+	<h1> Enter Customer Details </h1>
+	
+	<form action="InsertCustomerDetails.jsp" method="post">
+		<table>
+			<tr>
+				<td> Customer Number: </td>
+				<td> <input type="number" name="customerNumber" required > </td>
+			</tr>
+			
+			<tr>
+				<td> Customer Name: </td>
+				<td> <input type="text" name="customerName" required> </td>
+			</tr>
+			
+			<tr>
+				<td> Customer City: </td>
+				<td> <input type="text" name="customerCity" required> </td>
+			</tr>
+			
+			<tr>
+				<td colspan="2"> <input type="submit" value="Insert Details"> </td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>
