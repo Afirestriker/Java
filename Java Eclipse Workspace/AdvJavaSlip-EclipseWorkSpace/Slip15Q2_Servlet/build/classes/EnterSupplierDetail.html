@@ -1,0 +1,43 @@
+
+<!-- Slip15 2. Write one HTML page which accepts supplier details(sno, supname, mobno). Insert
+this record using a servlet. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Accept Supplier Details</title>
+</head>
+<body>
+
+	<br>
+	<h3> Accept Supplier Details </h3>
+	<hr>
+	
+	<form action="Supplier" method="post">
+		<table>
+			<tr>
+				<td> <label for="Supplier ID">Supplier ID: </label></td>
+				<td> <input type="number" name="sno" min="1" placeholder="ID" required> </td>
+			</tr>
+			
+			<tr>
+				<td> <label for="Supplier Name">Supplier Name: </label> </td>
+				<td> <input type="text" name="sname" placeholder="Name" required> </td>
+			</tr>
+			
+			<tr>
+				<td> <label for="Supplier Mobile">Supplier Mobile: </label></td>
+				<td> <input type="tel" name="smob" placeholder="123-4567-890" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}"  required> </td>
+			</tr>
+			
+			<tr>
+				<td> <input type="reset" > </td>
+				<td> <input type="submit" value="Insert"> </td>
+			</tr>
+			
+		</table>
+	</form>
+
+</body>
+</html>
