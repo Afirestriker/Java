@@ -1,0 +1,31 @@
+
+<!-- Slip08 2. Write one HTML page which accepts 2 numbers and displays their multiplication and
+subtraction using JSP. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Slip08Q2</title>
+</head>
+<body>
+
+	<h1>Enter Number to find its Multiplication and Subtraction:</h1>
+
+	<form action="Slip08Q2.jsp" method="post">
+	
+		<label for="Number1">Number1: </label>
+		<input type="text" name="number1" pattern="[0-9]" title="Only Number" placeholder="Enter Number" required >
+		
+		<br><br>
+		<label for="Number2">Number2: </label>
+		<input type="text" name="number2" pattern="[0-9]" title="Only Number" placeholder="Enter Number" required >
+		
+		<br><br>
+		
+		<input type="submit" value="CALCULATE">
+	
+	</form>
+
+</body>
+</html>
