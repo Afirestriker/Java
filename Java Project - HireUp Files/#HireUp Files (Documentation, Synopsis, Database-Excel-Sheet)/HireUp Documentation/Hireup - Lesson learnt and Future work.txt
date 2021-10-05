@@ -1,0 +1,37 @@
+
+
+HireUp - The Placement Management System Project work
+
+Lesson learnt:
+
+First design the end result page, or something
+so that you will not have to make many changes at the end.
+For example: In hireup case, resume design was created at the end, which result in many addition of column,
+			 and even table such as skills table.
+
+Make sure if user is doing process => forget password, 
+now, here user enter his username and email, and after click on continue,
+session is created with name 'username', but this same session name is used after user login,
+so define alternative session name such as uname to avoid this issue
+
+
+NOTE: Create shorter name for file (java, html, css, js, jsp, images-files or any file)
+      Since, it may be an issue that system may not able to copy the file, or fetch file detail due to extend of path limit
+
+
+1. create one more column in login table, with name 'Profile-Status enum(Complete, Incomplete) default value = Incomplete'
+   * check this validation at each page when user is visiting, 
+   * if profile-status = complete, let user see and work on the request page
+   * if profile-status = incomplete, then force user to complete it (in HireUp case, redirect to JSP/User/UserLoginAction.jsp
+
+   
+
+
+Future work:
+1. Resume download in color format
+2. File and Image upload
+3. Download Multiple Resume of selected user
+4. Filter feature for admin
+
+6. Additing validation, in admin view student records page, such that, only users who has fill all the details, that users records should be visible only
+
