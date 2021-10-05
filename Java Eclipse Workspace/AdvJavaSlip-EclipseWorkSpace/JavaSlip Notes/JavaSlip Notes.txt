@@ -1,0 +1,72 @@
+
+Database Tables:
+	emp (eno, ename, designation, salary)
+	customer (cno, cname, city)
+	product (pno, pname, price)
+	policy (pno, policyname, duration)
+	movie (mvno, mvname, releaseyear)
+	course (cno, cname, duration, fees)
+	book (bno, bookname, price)
+
+	author (ano, authorname, subject)
+	event (evno, evname, venue)
+	train (trno, trname, source, destination)
+	item (itnono, itemname, rate)
+	student (rno, sname, course)
+
+	Supplier (sno, supname, mobno)
+
+JDBC Questions:
+sp1Q1-
+Write a jdbc program to display all records from emp (eno,ename,salary) table.
+
+sp2q1-
+Write a jdbc program to display all records from customer (cno,cname,city) table
+
+sp3q1
+. Write a jdbc program to insert a record into emp table (eno,ename,design,salary).
+
+sp4q1-
+Write a jdbc program to delete given record from product table (pno,pname,price).
+(input as pname)
+
+sp5q1
+Write a jdbc program to display all the employees getting salary below 28000.
+
+sp6q1-
+Write a jdbc program to find and display given record from emp table
+(eno,ename,design,sal).
+
+sp7q1-
+Write a jdbc program to display all records from policy table (pno, policyname, duration).
+
+sp8q1-
+Write a jdbc program which displays movie details for given movie
+(mvno,mvname,releaseyear)
+
+sp12q1-
+Write a jdbc program to display all the courses. Course( cno, cname, duration, fees)
+
+sp13q1-
+Write a Jdbc program which accepts details for book (bno, bookname, price) and stores this data in the table.
+
+sp16q1-
+Write a jdbc program to accept customer number through command line arguments and display the corresponding details ( cname, city).
+
+Similar Slips:
+NOTE: Slip 21 to 31 are all duplicates slips
+
+slip 22 = slip 16
+slip 27 = slip 05
+slip 28 = slip 06
+slip 29 = slip 07
+slip 30 = slip 08
+
+slip 23 = slip 17
+slip 24 = slip 18
+slip 25 = slip 19
+slip 26 = slip 20
+slip 31 = slip 09
+
+slip 21 = slip 15
+
