@@ -1,0 +1,49 @@
+
+<!-- 
+	This is header file, its contain header used in /JSP/User/page.jsp
+	NOTE: This header is not used in /JSP/page.jsp and /JSP/Admin/page.jsp
+ -->
+
+<!-- Header menus for users -->
+<!-- This file specify header which is used on multiple pages using <%@include file="" %> tag of jsp -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>User Header File</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/UserHeader.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+	<!-- Menu Section -->
+	<section id="menu">
+		<nav class="menu-container">
+
+			<!-- HireUp Icon Image fetched from web -->
+			<a href="#index"><img class="logo" src="../Images/HireUpIcon.png" alt="HireUpLogo-img" title="HireUp"></a>
+
+			<ul>
+				<!-- This are header, menu item -->
+				<li><a href="#" title="Home"><span class="material-icons"> home </span></a></li>
+
+				<li class="discription"><a href="#"><span class="material-icons"> description </span></a>
+					<div class="dropdown-content">
+  						<a href="#">Personal Details</a>
+  						<a href="#">Academic Details</a>
+  					</div>
+				</li>
+
+				
+				<li><a href="#" title="Settings"><span class="material-icons"> manage_accounts </span></a></li>
+
+				<li><a href="#" title="Logout"><span class="material-icons"> logout </span></a></li>
+			</ul>
+		</nav>
+	</section>
+<!-- End of Menu  Section -->
+
+
+</body>
+</html>

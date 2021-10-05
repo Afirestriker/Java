@@ -1,0 +1,460 @@
+
+<<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>User Settings</title>
+	<link rel="icon" href="../Images/HireUpIcon.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="../CSS/user/UserSettings.css">
+</head>
+<body class="user-settings-body">
+
+	<div class="user-settings-container">
+
+		<div class="row">
+			
+			<div class="col-left">
+
+				<p class="status-on">Details Updated Successfully</p>
+				<p class="status-off">Error Updating! Try Again</p>
+				<p class="status-off">Password Incorrect! Try Again</p>
+				<p class="status-off">Something Went Wrong! Try Again</p>
+
+
+				<!-- <img src="https://img.icons8.com/clouds/2x/user-location.png"> -->
+				
+				<!-- <img width="250px" src="https://img.freepik.com/free-vector/people-looking-computer-working-from-home-office_112255-769.jpg?size=626&ext=jpg"> -->
+
+				<img width="350px" height="400px" src="https://image.freepik.com/free-vector/graphic-artist-freelancer_82574-8029.jpg">
+
+				<br>
+				<p class="firstname">Firstname </p>
+				<p class="email">Email@email.com</p>
+
+			</div> <!-- col-left close -->
+
+			<div class="col-middle">
+				
+				<h3 id="updatePersonalDetails">Update Personal Details</h3>
+				<br>
+
+			<!-- Update Personal Details form -->
+				<form action="#" method="post">
+	
+					<table>
+						<tr>
+							<td>Firstname*</td>
+							<td>Lastname*</td>
+						</tr>
+
+						<tr>
+							<!-- Firstname Input field -->
+							<td> <input type="text" name="firstname" placeholder="Your first name.." pattern="[a-zA-Z]{4,}" title="Only letters and min 4 char long" required> </td>
+
+							<!-- Lastname Input Field -->
+							<td> <input type="text" name="lastname" placeholder="Your last name.." pattern="[a-zA-Z]{4,}" title="Only letters and min 4 char long" required> </td>
+						</tr>
+
+						<tr>
+							<td>Birth-Date*</td>
+							<td>Gender*</td>
+						</tr>
+
+						<tr>
+							<!-- Select Birthdate -->
+							<td>  
+								<input type="date" name="birthdate" title="Birth Years (2000 - 1990)" min="1990-01-01" max="2000-12-31" required>
+							</td>
+
+							<td>
+								<!-- Gender Radio buttons -->
+								<input type="radio" name="gender" value="M" required checked=""> <label for="male">Male</label>
+				    			<input type="radio" name="gender" value="F"> <label for="Female">Female</label>
+				    			<input type="radio" name="gender" value="O"> <label for="Other">Other</label>
+							</td>
+						</tr>
+
+						<tr>
+							<td>Mobile*</td>
+							<td>Address*</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="tel" name="mobile" placeholder="+91-123-457-7890" title="Enter Indian Mobile Number (+91-123-456-7890)" pattern="[+]91-[0-9]{3}-[0-9]{3}-[0-9]{4}" required></td>
+							<td>
+								<input type="text" name="address" placeholder="Your Address..." title="Enter Address" maxlength="300" required> <br>
+							</td>
+						</tr>
+
+						<tr>
+							<td>City*</td>
+							<td>Country*</td>
+						</tr>
+
+						<tr>
+							<td>
+								<!-- City Input Field -->
+	    						<input type="text" name="city" placeholder="Your City..." pattern="[a-zA-Z]{4,}" title="Only letters and min 4 char long" required> <br>
+							</td>
+
+							<td>
+								<!-- Country Input Field -->
+				    			<input type="text" name="country" placeholder="Your Country..." pattern="[a-zA-Z]{4,}" title="Only letters and min 4 char long" required> <br>
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan="2">About Me*</td>
+						</tr>
+
+						<tr>
+							<td colspan="2">
+								<!-- using text field instead, as textarea did not support value field -->
+								<input type="text" name="aboutme" placeholder="More About Me..." maxlength="500" required>
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan="2"> <input type="submit" value="UPDATE PERSONAL DETAILS"> </td>
+						</tr>
+
+					</table>
+				</form> 
+				<!-- Update Personal Details form -->
+
+
+				<!-- Update Academic Details -->
+				<hr>
+				<br><br>
+				<h3 id="updateAcademicDetails">Update Academic Details</h3>
+				<br>
+				<form action="#" method="post">
+	
+					<table>
+				
+				<!-- Enter rollno and course details -->
+						<tr>
+							<td>Roll no*</td>
+							<td>Course*</td>
+						</tr>
+
+						<tr>
+							<!-- Rolno Input field -->
+							<td> <input type="text" name="rollno" placeholder="Your Roll no..(01-99)" pattern="[0-9]{2,2}" title="Two Digit Numbers Range (01-99)" maxlength="2" required> </td>
+
+							<!-- Course Select Field -->
+							<td> 
+								<select name="course" required>
+				    				<option value="">Select Course</option>
+				    				<option value="BBA">BBA</option>
+				    				<option value="BBA(CA)">BBA(CA)</option>
+				    				<option value="BBA(GeB)">BBA(GeB)</option>
+				    				<option value="BBA(IB)">BBA(IB)</option>
+				    			</select>
+    			 			</td>
+						</tr>
+				<!-- rollno and course details close -->
+
+
+				<!-- Enter 10th Details -->
+						<!-- 10th University name rows -->
+						<tr>
+							<td colspan="2">10th University*</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input type="text" name="university10th" maxlength="300" placeholder="Enter SSC University Name, Place" required>
+							</td>
+						</tr>
+
+						<!-- 10th school name rows -->
+						<tr>
+							<td colspan="2">10th school Name*</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input type="text" name="schoolName10th" maxlength="300" placeholder="Enter SSC School Name" required>
+							</td>
+						</tr>
+
+						<!-- 10th Grade (%)  and start-pass year rows -->
+						<tr>
+							<td>10th Grade (%)*</td>
+							<td>10th Start - Pass Year</td>
+						</tr>
+						<tr>
+							<!-- 10th Grade Select -->
+							<td>  
+								<select name="grade10th" required>
+				    				<option value="">Select 10th Grade</option>
+				    				<option value="A">A (81 - 100)</option>
+				    				<option value="B">B (70 - 79)</option>
+				    				<option value="C">C (60 - 69)</option>
+				    				<option value="D">D (50 - 59)</option>
+				    			</select>
+							</td>
+
+							<td>
+								<input type="text" name="startPassYear10th" placeholder="1234 - 1234" pattern="[0-9]{4,4} - [0-9]{4,4}" required>
+							</td>
+						</tr>
+				<!-- 10th details close -->
+
+
+				<!-- Enter 12th Details -->
+
+						<!-- 12th University name rows -->
+						<tr>
+							<td colspan="2">12th University*</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input type="text" name="university12th" maxlength="300" placeholder="Enter 12th University Name, Place" required>
+							</td>
+						</tr>
+
+						<!-- 12th school name rows -->
+						<tr>
+							<td colspan="2">12th College Name*</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input type="text" name="collegeName12th" maxlength="300" placeholder="Enter 12th School Name" required>
+							</td>
+						</tr>
+
+						<!-- 12th Grade (%)  and start-pass year rows -->
+						<tr>
+							<td>12th Grade (%)*</td>
+							<td>12th Start-Pass Year*</td>
+						</tr>
+
+						<tr>
+							<td>
+								<!-- 12th Grade Select -->
+								<select name="grade12th" required>
+				    				<option value="">Select 12th Grade</option>
+				    				<option value="A">A (81 - 100)</option>
+				    				<option value="B">B (70 - 79)</option>
+				    				<option value="C">C (60 - 69)</option>
+				    				<option value="D">D (50 - 59)</option>
+				    			</select>
+							</td>
+							
+							<td>
+							<input type="text" name="startPassYear12th" placeholder="1234 - 1234" pattern="[0-9]{4,4} - [0-9]{4,4}" required>
+							</td>
+
+						</tr>
+
+				<!-- 12th Details close -->
+
+
+				<!-- Enter College Details -->
+
+						<!-- 12th University name rows -->
+						<tr>
+							<td colspan="2">College University*</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input type="text" name="collegeUniversity" maxlength="300" placeholder="Enter College University Name, Place" required>
+							</td>
+						</tr>
+
+						<!-- 12th school name rows -->
+						<tr>
+							<td colspan="2">College Name*</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input type="text" name="collegeName" maxlength="300" placeholder="Enter College Name" required>
+							</td>
+						</tr>
+
+						<!-- College Aggregate and Start-Pass year -->
+						<tr>
+							<td>College Aggregate (%)*</td>
+							<td>College Start-Pass Year*</td>
+						</tr>
+
+						<tr>
+							<td>
+								<!-- College Aggregate Select -->
+				    			<select name="collegeAggregate" required>
+				    				<option value="">Select College Aggregate</option>
+				    				<option value="A">A (81 - 100)</option>
+				    				<option value="B">B (70 - 79)</option>
+				    				<option value="C">C (60 - 69)</option>
+				    				<option value="D">D (50 - 59)</option>
+				    			</select>
+							</td>
+
+							<td>
+								<input type="text" name="collegeStartPassYear" placeholder="1234 - 1234" pattern="[0-9]{4,4} - [0-9]{4,4}" required>
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan="2"> <input type="submit" value="UPDATE ACADEMIC DETAILS"> </td>
+						</tr>
+
+				<!-- College Details Close -->
+
+					</table>
+				</form>	
+				<!-- Update Academic Detail form close -->
+
+			</div>
+			<!-- col-middle close -->
+
+			<div class="col-right">
+				
+				<!-- col-right update skills form -->
+				<h3 id="changePassword">Update Skills </h3>
+				<form action="#" method="post">
+					
+					<table>
+						
+						<tr> <td colspan="2"> <p style="font-size: 18px; margin-bottom: 8px;">Professional Skills</p> </td> </tr>
+						<!-- HTML and C skills -->
+						<tr>
+							<td>HTML*</td>
+							<td>C*</td>
+						</tr>
+						<tr>
+							<td> <input type="number" name="html" placeholder="(%)" min="1" max="100" required> </td>
+							<td> <input type="number" name="c" placeholder="(%)" min="1" max="100" required> </td>
+						</tr>
+
+						<!-- CSS and C++ skills -->
+						<tr>
+							<td>CSS*</td>
+							<td>C++*</td>
+						</tr>
+						<tr>
+							<td> <input type="number" name="css" placeholder="(%)" min="1" max="100" required> </td>
+							<td> <input type="number" name="cpp" placeholder="(%)" min="1" max="100" required> </td>
+						</tr>
+
+						<!-- JavaScript and Java skills -->
+						<tr>
+							<td>JavaScript*</td>
+							<td>Java*</td>
+						</tr>
+						<tr>
+							<td> <input type="number" name="javascript" placeholder="(%)" min="1" max="100" required> </td>
+							<td> <input type="number" name="java" placeholder="(%)" min="1" max="100" required> </td>
+						</tr>
+
+
+						<tr> <td colspan="2"> <p style="font-size: 18px; margin: 6px 0px 8px;">Extra Curriculum Skills</p> </td> </tr>
+						<!-- Sports and Photography skills -->
+						<tr>
+							<td>Sports*</td>
+							<td>Photography*</td>
+						</tr>
+						<tr>
+							<td> <input type="number" name="sports" placeholder="(%)" min="1" max="100" required> </td>
+							<td> <input type="number" name="photogrpahy" placeholder="(%)" min="1" max="100" required> </td>
+						</tr>
+
+						<!-- Animation and Social Media skills -->
+						<tr>
+							<td>Animation*</td>
+							<td>Social Media*</td>
+						</tr>
+						<tr>
+							<td> <input type="number" name="animation" placeholder="(%)" min="1" max="100" required> </td>
+							<td> <input type="number" name="socialmedia" placeholder="(%)" min="1" max="100" required> </td>
+						</tr>
+
+						<!-- Act and Art skills -->
+						<tr>
+							<td>Act (Drama, Dance, Music)*</td>
+							<td>Art (Drawing, Painting, Cartooning)*</td>
+						</tr>
+						<tr>
+							<td> <input type="number" name="act" placeholder="(%)" min="1" max="100" required> </td>
+							<td> <input type="number" name="art" placeholder="(%)" min="1" max="100" required> </td>
+						</tr>
+
+						<tr>
+							<td colspan="2"> <input type="submit" value="Update Skills"> </td>
+						</tr>
+
+					</table>
+				</form>
+				<!-- col-right update skills form close-->
+
+				<!-- col-right HireUp Image -->
+				<img src="../Images/HireUpIcon.png" alt="HireUpCion.png" title="HireUp">
+
+				<br><br>
+				<!-- col-right change password form -->
+				<h3 id="changePassword">Change Password </h3>
+				<form action="#" method="post">
+					
+					<table>
+						<tr>
+							<td>Old Password*</td>
+						</tr>
+
+						<tr>
+							<td><input type="password" name="old-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter Old Password*" id="password" required></td>
+						</tr>
+
+						<tr>
+							<td>New Password*</td>
+						</tr>
+
+						<tr>
+							<td><input type="password" name="new-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter New Password*" id="password" required></td>
+						</tr>
+
+						<tr>
+							<td> <input type="checkbox" name="password-visibility" onclick="login_showPassword()"> Show Password</td>
+						</tr>
+
+						<tr>
+							<td> <input type="submit" value="CHANGE PASSWORD"> </td>
+						</tr>
+
+					</table>
+				</form>
+				<!-- col-right change password form close -->
+
+				<hr>
+
+				<div class="col-right-del-account">
+					<form action="#" method="post">
+
+						<table>
+
+							<tr>
+								<td>
+									<input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter Password*" required></td>
+							</tr>
+
+							<tr>
+								<td>
+									<input type="submit" value="Delete Account">
+								</td>
+							</tr>
+
+						</table>
+					</form>
+				</div>
+				<!-- col-right-del-account close -->
+
+			</div> 
+			<!-- col-right close -->
+
+		</div>
+		<!-- row close -->
+
+	</div>
+	<!-- user settings container close -->
+
+</body>
+</html>

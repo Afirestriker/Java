@@ -1,0 +1,52 @@
+
+<!-- This page display error information to user and admin -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Error!</title>
+	<link rel="icon" href="../Images/HireUpIcon.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="../CSS/Error.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+		
+	<div class="error-container">
+		
+		<img src="../Images/rocket-crash-error.jpg">
+
+		<div class="error-text">
+		
+			<!-- If session equals NULL -->
+			<!-- 401 Unauthorized  Error -->  
+			<p>
+				401 Unauthorized: Admin/User Login required to access this page
+			</p>
+			<br>
+			<a href="#"><button>Login To Continue</button></a>
+		 
+
+			<!-- If Session is not NULL, exception is thrown -->
+			<!-- 400 Bad Request -->
+		  
+			<p style="margin-bottom: 16px;">
+				400 Bad Request: Something has gone wrong with your web browser in relation to your request. Please clear cookies and cache and try again. 
+			</p>
+
+			<a href="#"><button>Back to Home Page</button></a> 
+		
+			<p class="error-message"> 
+				<span class="material-icons"> error_outline </span> 
+				Display actual Error Message here
+			</p>
+			
+		</div>
+		<!-- error-text close -->
+
+	</div>
+	<!-- error-container -->
+
+</body>
+</html>

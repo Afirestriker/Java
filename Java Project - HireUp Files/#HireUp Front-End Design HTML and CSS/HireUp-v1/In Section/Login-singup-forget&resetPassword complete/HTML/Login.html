@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+	<title>Welcome To HireUp</title>
+	<link rel="icon" href="../Images/HireUpIcon.png" type="image/png">
+	<link rel="stylesheet" href="../CSS/Login.css">
+	<link rel="stylesheet" href="../CSS/Login&Signup.css">
+	<script src="../JS/Login&Signup.js"> </script>
+</head>
+<body>
+
+	<a href="index.html"><img class="hireupIcon" src="../Images/HireUpIcon.png"></a>
+	<div class="Login-Signup-container">
+
+		<div class="login">Log In</div>
+		<div class="signup"><a href="Signup.html">Singup</a></div>
+
+		<div class="login-form">
+			<form action="" method="post">
+				<h3 class="msg-invalid">Wrong Username or Password!</h3><br>
+				<h3 class="msg-invalid">User does not exit, <a href="#">Sing up first!</a></h3><br>
+
+				<input type="text" name="username" pattern="[a-zA-Z][A-Za-z0-9_]{3,}" placeholder="Enter UserName*" title="The username must start with a letter, can contain nubmers and underscore and must be of miminum 4 character long" class="login-signup-input" required>
+				<br>
+				<input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter Password*" id="password" class="login-signup-input" required>
+				<br>
+				<input type="checkbox" name="password-visibility" onclick="login_showPassword()"> Show Password
+				<br><br>
+				<input type="submit" name="login" Value="Log In" class="login-signup-button">
+
+				<span><a href="ForgetPassword.html">Forget Password? </a></span>
+
+			</form>
+		</div>	
+	</div>
+
+</body>
+</html>

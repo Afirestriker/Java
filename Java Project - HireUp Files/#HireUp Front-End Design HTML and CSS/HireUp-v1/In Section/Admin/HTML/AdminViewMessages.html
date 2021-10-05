@@ -1,0 +1,132 @@
+
+<!-- This page display, the contact-us detail to the admin, which includes
+	 1. feedback
+	 2. question, etc
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>View Contacts Messages</title>
+	<link rel="icon" href="../Images/HireUpIcon.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="../CSS/Admin/AdminViewMessages.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<!-- This is jquery embeded link, used for search field (Script is written at end of this page) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+	<div class="admin-view-messages-container">
+
+		<div class="col-left">
+			
+			<div class="table-heading">
+				Contact Messages
+			</div>
+
+			<div class="table-container">
+
+				<p style="text-align: center; color: red; font-size: 20px; font-weight: bold;"> Something went wrong! Data cannot be fecthed</p>
+
+				<input type="search" id="searchField" placeholder="Search for names.." title="Type in a name"> <span class="material-icons"> search </span> <br>
+
+				<table>
+
+					<thead>
+						<tr>
+							<th>Email</th>
+							<th>Name</th>
+							<th>Place</th>
+							<th class="col-comment">Comment</th>
+							<th>Reply</th>
+							<th>Mark As Read</th>
+						</tr>
+					</thead>
+
+					<tbody id="tableBody">
+						
+						<!-- table row to display, if contact table records count is zero -->
+						<tr>
+							<td colspan="6"> No Any Data To Display</td>
+						</tr>
+
+						<!-- table rows to display, if contact table records count is non zero -->
+						<tr>
+							<td>
+								Abc@abcd.com
+							</td>
+
+							<td>
+								Firstname Lastname
+							</td>
+
+							<td>
+								City
+							</td>
+
+							<td class="col-comment">
+								Some Text Display Here, Some Text Display Here
+							</td>
+
+							<td>
+								<a href="#">Reply</a>
+							</td>
+
+							<td>
+								<input type="checkbox" name="Read">
+							</td>
+
+						</tr>
+
+						<!-- Table Last Row -->
+						<!-- Update Contacts Button -->
+						<tr class="update-conacts-button">
+							<td colspan="4"></td>
+
+							<td colspan="2">
+								<a href="#"> <button>Update Contacts</button> </a>
+							</td>
+						</tr>
+
+					</tbody>
+					
+				</table>
+
+			</div>
+			<!-- table-container close -->
+
+		</div>
+		<!-- col-left close -->
+			
+
+		<div class="col-right">
+			<div class="page-img">
+				<img src="../Images/Admin/contact-messages.jpg">
+			</div>	
+		</div>
+		<!-- col-right close -->
+	
+	</div>
+	<!-- admin-view-user-records-container close -->
+
+
+
+<!-- This is JQuery script code for working of search field, for searching rcords live in the file -->
+<script>
+    $(document).ready(function() {
+        $("#searchField").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#tableBody tr").filter(function() {
+                $(this).toggle($(this).text()
+                .toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>
+
+
+</body>
+</html>

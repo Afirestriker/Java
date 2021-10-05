@@ -1,0 +1,136 @@
+
+<!-- 
+	Here, Admin can see selected student records
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>View Selected Records</title>
+	<link rel="icon" href="../Images/HireUpIcon.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="../CSS/Admin/AdminViewUserRecords.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<!-- This is jquery embeded link, used for search field (Script is written at end of this page) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+	<div class="admin-view-user-records-container">
+
+		<div class="col-left">
+			
+			<div class="text-content">
+				Selected Student Records
+			</div>
+
+			<div class="table-container">
+
+				<p style="text-align: center; color: #ff6969; font-size: 20px; font-weight: bold;"> Something went wrong! Data cannot be fecthed</p>
+
+				<p style="text-align: center; color: #ff6969; font-size: 20px; font-weight: bold;"> Error in Updating Database </p>
+
+				<p style="text-align: center; color: #3fc908; font-size: 20px; font-weight: bold;"> Database Updated </p>
+
+
+				<input type="search" id="searchField" placeholder="Search for names.." title="Type in a name"> <span class="material-icons"> search </span> <br>
+
+				<div id="printableTable">
+				<table border="1">
+
+					<thead>
+						<tr>
+							<th>Email</th>
+							<th>Company Name</th>
+							<th>Joining Date</th>
+							<th>Package (in lakh)</th>
+							<th>Offer Letter</th>
+							<th>HireStatus</th>
+						</tr>
+					</thead>
+
+					<tbody id="tableBody">
+						<tr>
+							<td>
+								Abc@abcd.com
+							</td>
+
+							<td>
+								CompanyName
+							</td>
+
+							<td>
+								2022/01/01
+							</td>
+
+							<td>
+								9.5
+							</td>
+
+							<td>
+								Yes/No
+							</td>
+
+							<td style="color: green; font-weight: bold">
+								Selected
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								Abc@abcd.com
+							</td>
+
+							<td>
+								CompanyName
+							</td>
+
+							<td>
+								2022/01/01
+							</td>
+
+							<td>
+								9.5
+							</td>
+
+							<td>
+								Yes/No
+							</td>
+
+							<td style="color: red; font-weight: bold">
+								Not-Selected
+							</td>
+						</tr>
+
+
+					</tbody>
+					
+				</table>
+				</div>
+				<!-- div id="printableTable" close -->
+
+				 <button class="button_print" onclick="printDiv()">Print</button>
+				 <iframe name="print_table" width="0" height="0" frameborder="0" src="about:blank"></iframe>
+
+			</div>
+			<!-- table-container close -->
+
+		</div>
+		<!-- col-left close -->
+			
+
+		<div class="col-right">
+			<div class="page-img">
+				<img style="height: 420px;" src="https://cdn.dribbble.com/users/2317423/screenshots/14574446/job_seeker_by_robikucluk_4x.jpg">
+			</div>	
+		</div>
+	
+	</div>
+	<!-- admin-view-user-records-container close -->
+
+</body>
+<!-- This fiel contains concept for searching records and printing the displayed records -->
+<script src="../JS/AdminViewRecords.js"></script>
+</html>

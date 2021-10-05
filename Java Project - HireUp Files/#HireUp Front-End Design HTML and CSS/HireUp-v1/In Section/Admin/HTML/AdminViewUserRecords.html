@@ -1,0 +1,189 @@
+
+
+<!-- 
+	Here, Admin can see user records, 
+	Only needed records are displayed by fetching detail from database table
+	student_personal_deatail, student_academic_detail
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>View All Records</title>
+	<link rel="icon" href="../Images/HireUpIcon.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="../CSS/Admin/AdminViewUserRecords.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<!-- This is jquery embeded link, used for search field (Script is written at end of this page) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+	<div class="admin-view-user-records-container">
+
+		<div class="col-left">
+			
+			<div class="text-content">
+				All Student Records
+			</div>
+
+			<div class="table-container">
+
+				<p style="text-align: center; color: #ff6969; font-size: 20px; font-weight: bold;"> Something went wrong! Data cannot be fecthed</p>
+
+				<p style="text-align: center; color: #ff6969; font-size: 20px; font-weight: bold;"> Error in Updating Database </p>
+
+				<p style="text-align: center; color: #3fc908; font-size: 20px; font-weight: bold;"> Database Updated </p>
+
+				<input type="search" id="searchField" placeholder="Search for names.." title="Type in a name"> <span class="material-icons"> search </span> <br>
+
+				<div id="printableTable">
+				<table border="1">
+
+					<thead>
+						<tr>
+							<th>Email</th>
+							<th>Name</th>
+							<th>Age</th>
+							<th>Course</th>
+							<th>College_Aggregate</th>
+							<th>View</th>
+							<th>Current HireStatus</th>
+							<th>Update HireStatus</th>
+						</tr>
+					</thead>
+
+					<tbody id="tableBody">
+						<tr>
+							<td>
+								Abc@abcd.com
+							</td>
+
+							<td>
+								Firstname Lastname
+							</td>
+
+							<td>
+								98
+							</td>
+
+							<td>
+								ABC(AB)
+							</td>
+
+							<td>
+								'B'
+							</td>
+
+							<td>
+								<a href="#" target="_blank">View</a>
+							</td>
+
+						<!-- if user hireupstatus == not-selected -->
+						<!-- 
+							<td style="color:red; font-weight: bold;">
+								Not-Selected
+							</td>
+
+							<td class="hirestatus">
+								<a href="#" target="_blank"> <button>Mark As Selected</button> </a>
+							</td>
+						 -->
+
+						<!-- if user hireupstatus == selected -->
+						
+							<td style="color:green; font-weight: bold;">
+								Selected
+							</td>
+
+							<td class="hirestatus">
+								<a href="#"> <button>Mark Unplaced</button> </a>
+							</td>
+						
+
+						</tr>
+
+
+						<tr>
+							<td>
+								Abc@abcd.com
+							</td>
+
+							<td>
+								Firstname Lastname
+							</td>
+
+							<td>
+								98
+							</td>
+
+							<td>
+								ABC(AB)
+							</td>
+
+							<td>
+								'B'
+							</td>
+
+							<td>
+								<a href="#" target="_blank">View</a>
+							</td>
+
+						<!-- if user hireupstatus == not-selected -->
+						
+							<td style="color:red; font-weight: bold;">
+								Not-Selected
+							</td>
+
+							<td class="hirestatus">
+								<a href="#" target="_blank"> <button>Mark Placed</button> </a>
+							</td>
+						
+
+						<!-- if user hireupstatus == selected -->
+						<!-- 
+							<td style="color:green; font-weight: bold;">
+								Selected
+							</td>
+
+							<td class="hirestatus">
+								<a href="#"> <button>Mark As Not-Selected</button> </a>
+							</td>
+						 -->
+
+						</tr>
+
+					</tbody>
+					
+				</table>
+
+				</div>
+				<!-- div id="printableTable" close -->
+
+				 <button class="button_print" onclick="printDiv()">Print</button>
+				 <iframe name="print_table" width="0" height="0" frameborder="0" src="about:blank"></iframe>
+
+			</div>
+			<!-- table-container close -->
+
+		</div>
+		<!-- col-left close -->
+			
+
+		<div class="col-right">
+			<div class="page-img">
+				<img src="https://image.freepik.com/free-vector/recruit-agent-analyzing-candidates_74855-4565.jpg">
+			</div>	
+		</div>
+	
+	</div>
+	<!-- admin-view-user-records-container close -->
+
+</body>
+
+<!-- This fied contains concept for searching records and printing the displayed records -->
+<script src="../JS/AdminViewRecords.js"></script>
+
+</html>

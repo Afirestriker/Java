@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+/*Menu section*/
+#menu{
+
+	font-size: 10px;
+	font-family: Montserrat, Roboto, sans-serif;
+	scroll-behavior: smooth;
+
+	margin: 0px;  /*All side*/
+	padding: 0px; /*All side*/
+
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+}
+
+#menu .menu
+{
+	min-height: 10vh;
+	width: 100%;
+	max-width: 100%;
+	margin: 0px auto;
+
+	display: flex;
+		align-items: center;
+		justify-content: center;
+
+	background-color: rgba(31,30,30,0.24); /* (0.24 is the opacity) */
+	justify-content: space-between;
+	transition: .3s ease background-color;
+}
+
+#menu .menu .logo
+{
+	height: 70px;
+	margin-left: 150px;
+}
+
+#menu .menu ul
+{
+	margin-right: 150px;
+}
+
+#menu .menu ul li{
+	display: inline-block;
+	list-style: none;
+	padding: 13px;
+	padding-top: 10px;
+}
+
+#menu .menu ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 16px; /*14px*/
+ 	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: .3s ease color;
+}
+
+
+#menu .menu ul li a:hover{
+	color: #5b93eb;
+}
+
+
+
+/*End of Menu section-------------------------------------------------------------------------*/
+
